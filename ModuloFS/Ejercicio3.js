@@ -15,5 +15,12 @@ fs.readFile(nuevoArchivo,(err,data) => {
     //Ponemos el texto que vamos a añadir
     const contenidoNuevo = data + "\n¡Esto es genial!";
 
-    
-})
+    //Escribimos el contenido nuevo
+    fs.writeFile(nuevoArchivo,contenidoNuevo,(err) => {
+        if (err) {
+            console.error("Error al escribir en el archivo:", err);
+            return;
+        }
+        console.log("El archivo ha sido editado");
+    });
+});
