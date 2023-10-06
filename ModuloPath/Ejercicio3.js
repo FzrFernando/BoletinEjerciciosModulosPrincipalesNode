@@ -12,3 +12,4 @@ console.log("Ruta absoluta del archivo:", rutaAbsoluta);
 
 // Duda:
 // ¿Aunque el archivo no exista sale la ruta?
+// Duda resuelta, si no hay archivo lo pone igual
